@@ -1,0 +1,58 @@
+.image-list {
+	&.on-select {
+		.item:not(.selected) {
+			opacity: 0.5;
+		}
+	}
+	.item {
+		float: left;
+		padding: 10px;
+		width: 20%;
+		position: relative;
+
+		input[type='checkbox'] {
+			&:checked {
+				color: #000;
+				background: #fff;
+			}
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			margin: 5px;
+			color: #000;
+			background: #fff;
+		}
+
+		.image-container {
+			background: #efefef;
+			border-radius: 3px;
+			height: 220px;
+			cursor: pointer;
+
+			img {
+				border-radius: 3px;
+				height: 100%;
+				object-fit: contain;
+				width: 100%;
+			}
+		}
+
+		.file-name {
+			font-size: 16px;
+			margin: 0;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		.album {
+			font-size: 12px;
+			margin: 0;
+			text-align: center;
+		}
+	}
+}
+@media only screen and (max-width: 980px) {
+	.item {
+		width: 33.33%;
+	}
+}

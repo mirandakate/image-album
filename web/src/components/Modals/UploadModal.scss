@@ -1,0 +1,73 @@
+.ant-modal-content {
+	.ant-modal-close-icon {
+		svg {
+			font-size: 28px;
+			color: #000;
+		}
+	}
+	.ant-modal-header {
+		border-bottom: none;
+		padding: 30px 24px 10px;
+
+		.ant-modal-title {
+			font-size: 26px;
+			font-weight: bold;
+			color: #000;
+		}
+	}
+	.ant-modal-body {
+		aside {
+			min-height: 280px;
+			margin-top: 10px;
+			font-size: 20px;
+			color: #000;
+
+			h3 {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: #000;
+				font-weight: 500;
+				font-size: 20px;
+			}
+			.preview-list {
+				margin: -10px;
+
+				img {
+					width: 100px;
+					height: 100px;
+					object-fit: contain;
+					background: #efefef;
+					margin: 10px;
+				}
+			}
+		}
+	}
+	.dropzone {
+		flex: 1 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 40px 20px;
+		border-width: 1px;
+		border-radius: 2px;
+		border-color: #dedede;
+		border-style: dashed;
+		color: #bdbdbd;
+		outline: none;
+		transition: border 0.24s ease-in-out;
+		cursor: pointer;
+
+		p {
+			margin: 0;
+			color: #000;
+			font-size: 20px;
+			font-weight: 500;
+		}
+	}
+	.modal-footer {
+		display: flex;
+		justify-content: space-between;
+	}
+}
